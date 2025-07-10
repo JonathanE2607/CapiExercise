@@ -1,0 +1,74 @@
+.container {
+  background: #ffff;
+  width: 300px;
+  height: 420px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.chart {
+  width: fit-content;
+  height: auto;
+}
+
+.title {
+  color: #000;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.ContainerIcon {
+  display: flex;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  background-color: #f8debd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.secondText {
+  margin-top: 20px;
+  color: #000;
+  font-size: 50px;
+}
+.secondTextSmall {
+  color: #818181;
+  padding: 0;
+  align-self: end;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: x-large;
+}
+
+.containerSecondText {
+  display: flex;
+}
+
+.containerOtherText {
+  width: 100px;
+  height: 30px;
+  background-color: #f8debd;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding-top: 1px;
+}
+
+.textContaineOther {
+  color: #000;
+  justify-self: center;
+  margin-top: 5px;
+}
+
+.reactIcon{
+    font-size:70px;
+    color: #E79B38;
+}
