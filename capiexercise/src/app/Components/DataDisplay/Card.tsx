@@ -7,20 +7,23 @@ export default function Card() {
     <div className={styles.container}>
       <div>
         <div className={styles.ContainerIcon}>
-            <div className={styles.icon}><BiDonateBlood className={styles.reactIcon} /></div>
-            <h2 className={styles.title}>Blod Sugar</h2>
+          <div className={styles.icon}>
+            <BiDonateBlood className={styles.reactIcon} />
+          </div>
+          <h4 className={styles.title}>Blood Sugar</h4>
+        </div>
+
+        <div className={styles.containerSecondText}>
+          <h2 className={styles.secondText}>80</h2>
+          <p className={styles.secondTextSmall}>mg/dL</p>
+        </div>
+
+        <div className={styles.containerOtherText}>
+          <span className={styles.textContaineOther}>Normal</span>
         </div>
       </div>
-      <div className={styles.containerSecondText}>
-        <h3 className={styles.secondText}>80</h3>
-        <p className={styles.secondTextSmall}>mg/dL</p>
-      </div>
-      <div className={styles.containerOtherText}>
-        <p className={styles.textContaineOther}>Normal</p>
-      </div>
-      <div style={{width: "70%", height:"250px"}}>
-        <ChardCard />
-      </div>
+
+      <ChardCard />
     </div>
   );
 }
