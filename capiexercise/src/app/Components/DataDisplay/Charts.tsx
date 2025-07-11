@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Chart as ChartJS,
@@ -8,44 +8,60 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import { useState, useMemo } from 'react';
-import './Charts.css';
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+import { useState, useMemo } from "react";
+import "./Charts.css";
 
-ChartJS.register(BarElement, CategoryScale, LinearScale, Title, Tooltip, Legend);
+ChartJS.register(
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const days = 18;
 const labels = Array.from({ length: days }, (_, i) => `Jan ${i + 1}`);
 
 const generateYearData = (year: string) => {
-  const base = year === '2021' ? 5 : year === '2022' ? 10 : 15;
+  const base = year === "2021" ? 5 : year === "2022" ? 10 : 15;
   return {
     labels,
     datasets: [
       {
-        label: 'Aerobics',
-        data: Array.from({ length: days }, () => Math.floor(Math.random() * 25) + base),
-        backgroundColor: '#f87171',
-        stack: 'activity',
+        label: "Aerobics",
+        data: Array.from(
+          { length: days },
+          () => Math.floor(Math.random() * 25) + base
+        ),
+        backgroundColor: "#f87171",
+        stack: "activity",
         barThickness: 8,
         borderRadius: 8,
         borderSkipped: false,
       },
       {
-        label: 'Yoga',
-        data: Array.from({ length: days }, () => Math.floor(Math.random() * 15) + base),
-        backgroundColor: '#38bdf8',
-        stack: 'activity',
+        label: "Yoga",
+        data: Array.from(
+          { length: days },
+          () => Math.floor(Math.random() * 15) + base
+        ),
+        backgroundColor: "#38bdf8",
+        stack: "activity",
         barThickness: 8,
         borderRadius: 8,
         borderSkipped: false,
       },
       {
-        label: 'Meditation',
-        data: Array.from({ length: days }, () => Math.floor(Math.random() * 15) + base),
-        backgroundColor: '#fbbf24',
-        stack: 'activity',
+        label: "Meditation",
+        data: Array.from(
+          { length: days },
+          () => Math.floor(Math.random() * 15) + base
+        ),
+        backgroundColor: "#fbbf24",
+        stack: "activity",
         barThickness: 8,
         borderRadius: 8,
         borderSkipped: false,
@@ -56,12 +72,13 @@ const generateYearData = (year: string) => {
 
 const options = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     title: {
       display: false,
     },
     legend: {
-      position: 'bottom' as const,
+      position: "bottom" as const,
     },
   },
   scales: {
@@ -86,10 +103,12 @@ const options = {
 };
 
 export default function SingleStackBarChart() {
-  const [selectedYear, setSelectedYear] = useState('2023');
+  const [selectedYear, setSelectedYear] = useState("2023");
 
-
-  const chartData = useMemo(() => generateYearData(selectedYear), [selectedYear]);
+  const chartData = useMemo(
+    () => generateYearData(selectedYear),
+    [selectedYear]
+  );
 
   return (
     <section className="chart-section">

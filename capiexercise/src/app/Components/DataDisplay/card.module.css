@@ -1,7 +1,7 @@
 .container {
   background: #fff;
   width: 280px;
-  height: 380px;
+  height: 340px;
   padding: 20px;
   border-radius: 16px;
   display: flex;
@@ -55,7 +55,6 @@
   display: flex;
   align-items: flex-end;
   gap: 4px;
-  margin-top: 20px;
 }
 
 .containerOtherText {
@@ -64,7 +63,6 @@
   padding: 8px 12px;
   width: fit-content;
   margin: 16px 0;
-  margin-top: 20px;
 }
 
 .textContaineOther {
@@ -74,6 +72,6 @@
 }
 
 .reactIcon {
-  font-size: 28px;
+  font-size: 48px;
   color: #e79b38;
 }

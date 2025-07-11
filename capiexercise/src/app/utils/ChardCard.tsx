@@ -22,7 +22,7 @@ ChartJS.register(
   Tooltip
 );
 
-export default function ChardCard() {
+export default function ChardCardBlue() {
   const gradientRef = useRef<HTMLCanvasElement>(null);
 
   const data = {
