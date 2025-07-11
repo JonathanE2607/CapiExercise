@@ -1,10 +1,9 @@
-import Card from "./Components/DataDisplay/Card";
-import styles from "./page.module.css";
+import GroupedBarChart from "./Components/DataDisplay/Charts";
 
 export default function Home() {
   return (
-    <>
-     <Card />
-    </>
+    <div>
+      <GroupedBarChart />
+    </div>
   );
 }
