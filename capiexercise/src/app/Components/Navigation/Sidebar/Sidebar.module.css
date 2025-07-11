@@ -9,14 +9,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transform: translateX(-100%); /* Empieza escondido */
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     z-index: 50;
 }
 
-.open {
-    transform: translateX(0);
-}
 
 .sidebarStatic {
     width: 256px;
@@ -77,14 +74,6 @@
 
 .navItem i {
     font-size: 24px;
-}
-
-.logout {
-    color: red;
-}
-
-.logout:hover {
-    background-color: #ffe6e6;
 }
 
 @media (max-width: 768px) {

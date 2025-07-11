@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 256px; /* Deja espacio para el sidebar */
+  left: 256px; 
   right: 0;
   height: auto;
   background-color: #ffffff;
@@ -123,6 +123,6 @@
 
 @media (max-width: 768px) {
   .navbar {
-    left: 80px; /* Sidebar colapsado */
+    left: 80px; 
   }
 }
