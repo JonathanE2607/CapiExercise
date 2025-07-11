@@ -1,10 +1,11 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 256px; 
+  left: 256px;
   right: 0;
   height: auto;
   background-color: #ffffff;
+  color: #333;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   padding: 8px 16px;
   display: flex;
@@ -14,6 +15,12 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+
+.navbar * {
+  color: inherit;
+  opacity: 1;
+  visibility: visible;
+}
 
 .leftSection {
   display: flex;
@@ -121,8 +128,9 @@
   background-color: #ffe6e6;
 }
 
+/* ✅ Ajuste responsivo para Sidebar colapsado */
 @media (max-width: 768px) {
   .navbar {
-    left: 80px; 
+    left: 80px;
   }
 }
