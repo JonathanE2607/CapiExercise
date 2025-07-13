@@ -128,7 +128,7 @@
   background-color: #ffe6e6;
 }
 
-/* ✅ Ajuste responsivo para Sidebar colapsado */
+
 @media (max-width: 768px) {
   .navbar {
     left: 80px;
