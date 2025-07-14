@@ -1,10 +1,7 @@
 "use client";
-
-import type { Metadata } from "next";
+import "react-toastify/dist/ReactToastify.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Sidebar from "./Components/Navigation/Sidebar/Sidebar";
-import Navbar from "./Components/Navigation/Navbar";
 import "boxicons/css/boxicons.min.css";
 
 const geistSans = Geist({
@@ -25,20 +22,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <div style={{ display: "flex" }}>
-          <Sidebar />
-          <main
-            style={{
-              marginLeft: "256px",
-              padding: "2rem",
-              flex: 1,
-              backgroundColor: "#fdfcfc",
-            }}
-          >
-            {children}
-          </main>
-          <Navbar />
-        </div>
+        {children}
       </body>
     </html>
   );
