@@ -1,6 +1,7 @@
 "use client";
 import "react-toastify/dist/ReactToastify.css";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AuthProvider } from "@/../src/app/store/AuthContext";
 import "./globals.css";
 import "boxicons/css/boxicons.min.css";
 
@@ -20,10 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>
-        {children}
-      </body>
-    </html>
+    <AuthProvider>
+      <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+        <body>
+          {children}
+        </body>
+      </html>
+    </AuthProvider>
   );
 }
